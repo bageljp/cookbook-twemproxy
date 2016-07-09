@@ -1,0 +1,6 @@
+session:
+  listen: 0.0.0.0:11211
+  hash: fnv1a_64
+  distribution: ketama
+  servers:
+    - <%= node['twemproxy']['backend']['server'] %>:<%= node['twemproxy']['backend']['port'] %>:1

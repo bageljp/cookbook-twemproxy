@@ -1,0 +1,6 @@
+<%= node['twemproxy']['log_dir'] %>/nutcracker.log {
+    daily
+    rotate <%= node['twemproxy']['lotate'] %>
+    dateext
+    missingok
+}

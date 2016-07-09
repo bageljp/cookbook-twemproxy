@@ -1,0 +1,11 @@
+default['twemproxy']['install_flavor'] = "rpm"
+default['twemproxy']['version'] = "0.3.0"
+default['twemproxy']['log_dir'] = "/var/log/nutcracker"
+default['twemproxy']['lorate'] = "31"
+default['twemproxy']['backend']['server'] = "127.0.0.1"
+default['twemproxy']['backend']['port'] = "11211"
+default['twemproxy']['user'] = "nobody"
+default['twemproxy']['group'] = "nobody"
+# rpm
+default['twemproxy']['rpm']['file'] = "nutcracker-#{node['twemproxy']['version']}-1.x86_64.rpm"
+default['twemproxy']['rpm']['url'] = "http://localhost/"
